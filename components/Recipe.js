@@ -1,5 +1,23 @@
 export default function Recipe({ title, recipe }) {
   return (
+    <script type="application/ld+json">
+      {`
+      {
+        "@context": "https://schema.org/",
+        "@type": "Recipe",
+        "name": "${title}",
+        "author": "Gez Quinn",
+        "recipeYield": "1 serving",
+        "recipeIngredient": [
+          ${recipe.split("\n").map((line, index) => `"${line}"`).join(",\n")}
+        ],
+        "recipeInstructions": [
+          "Blend greens and liquid until smooth.",
+          "Add remaining ingredients and blend again until smooth."
+        ]
+      }
+      `}
+    </script>
     <div vocab="https://schema.org/" typeof="Recipe">
       <h1 property="name">{title}</h1>
       <span property="author">Gez Quinn</span>,
