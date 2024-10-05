@@ -7,6 +7,9 @@ export default function Recipe({ title, recipe }) {
       <RecipeJsonLd
         name={title}
         authorName="Gez Quinn"
+        description="A healthy green smoothie recipe."
+        prepTime="PT5M"
+        cookTime="PT0M"
         image="https://friendly-cheesecake-e6101a.netlify.app/green-smoothie.jpg"
         yields="1"
         ingredients={recipe ? recipe.split("\n") : []}
