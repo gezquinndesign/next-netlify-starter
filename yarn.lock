@@ -161,13 +161,13 @@ __metadata:
   resolution: "next-netlify-starter@workspace:."
   dependencies:
     "@netlify/plugin-nextjs": "npm:^5.7.3"
-    next: "npm:^14.2.0"
+    next: "npm:^14.2.14"
     react: "npm:^18.2.0"
     react-dom: "npm:^18.2.0"
   languageName: unknown
   linkType: soft
 
-"next@npm:^14.2.0":
+"next@npm:^14.2.14":
   version: 14.2.14
   resolution: "next@npm:14.2.14"
   dependencies:
