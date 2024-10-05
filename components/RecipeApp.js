@@ -2,7 +2,7 @@ import React from 'react'
 import Recipe from './Recipe'
 
 export default function RecipeApp ({recipes, slug}) {
-  const [index, setIndex] = React.useState(5)
+  const [index, setIndex] = React.useState(6)
   const recipe = recipes[index]
 
   const previousRecipe = () => {
