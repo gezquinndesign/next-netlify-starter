@@ -1,8 +1,8 @@
 import React from 'react'
 import Recipe from './Recipe'
 
-export default function RecipeApp ({recipes}) {
-  const [index, setIndex] = React.useState(0)
+export default function RecipeApp ({recipes, slug}) {
+  const [index, setIndex] = React.useState(recipes.findIndex(recipe => recipe.slug === slug) )
   const recipe = recipes[index]
 
   const previousRecipe = () => {
