@@ -11,7 +11,7 @@ export default function Recipe({ title, recipe }) {
         "@type": "Recipe",
         "name": "${title}",
         "author": "Gez Quinn",
-        "image": "/green-smoothie.jpg",
+        "image": "https://friendly-cheesecake-e6101a.netlify.app/green-smoothie.jpg",
         "recipeYield": "1 serving",
         "recipeIngredient": [
           ${recipe
