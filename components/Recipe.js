@@ -9,7 +9,7 @@ export default function Recipe({ title, recipe }) {
         authorName="Gez Quinn"
         image="https://friendly-cheesecake-e6101a.netlify.app/green-smoothie.jpg"
         yields="1"
-        ingredients={recipe.split("\n")}
+        ingredients={recipe ? recipe.split("\n") : []}
         instructions={[
           {
             name: '1',
@@ -31,7 +31,7 @@ export default function Recipe({ title, recipe }) {
         <h3>Ingredients</h3>
         <div>
           <ul>
-            {recipe.split("\n").map((line, index) => (
+            {(recipe ? recipe.split("\n"):[]).map((line, index) => (
               <li key={index}>{line}</li>
             ))}
           </ul>

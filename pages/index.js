@@ -1,7 +1,7 @@
+import React from 'react'
 import Head from 'next/head'
 import Footer from '@components/Footer'
 import RecipeApp from '@components/RecipeApp'
-import { useRouter } from 'next/router'
 
 export default function Home() {
   const recipes = [
@@ -486,9 +486,7 @@ export default function Home() {
       "recipe": "1 cup fresh spinach\n0.5 cup coconut water, unsweetened\n1.5 nectarines\n0.75 cups honeydew"
     }
   ]
-  
-  const router = useRouter()
-  const {slug} = router.query
+
   return (
     <div className="container">
       <Head>
@@ -498,7 +496,7 @@ export default function Home() {
       </Head>
 
       <main>
-        <RecipeApp recipes={recipes} slug={slug} />
+        <RecipeApp recipes={recipes}  />
       </main>
 
       <Footer />
