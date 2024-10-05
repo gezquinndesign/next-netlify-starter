@@ -13,7 +13,7 @@ from my mom -- the walnuts add a nice texture and flavor to the banana
 bread.</span> */}
       {/* Prep Time: <meta data-property="prepTime" content="PT15M">15 minutes
 Cook time: <meta data-property="cookTime" content="PT1H">1 hour */}
-      Yield: <span data-property="recipeYield">1 loaf</span>
+      Yield: <span data-property="recipeYield">1 serving</span>
       {/* Tags: <link data-property="suitableForDiet" href="https://schema.org/LowFatDiet" />Low Fat */}
       {/* <div data-property="nutrition" typeof="NutritionInformation">
   Nutrition facts:
