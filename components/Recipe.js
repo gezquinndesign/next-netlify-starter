@@ -1,8 +1,11 @@
+import Head from "next/head";
+
 export default function Recipe({ title, recipe }) {
   return (
     <>
-      <script type="application/ld+json">
-        {`
+      <Head>
+        <script type="application/ld+json">
+          {`
       {
         "@context": "https://schema.org/",
         "@type": "Recipe",
@@ -22,10 +25,10 @@ export default function Recipe({ title, recipe }) {
         ]
       }
       `}
-      </script>
+        </script>
+      </Head>
       <div vocab="https://schema.org/" typeof="Recipe">
-      <img property="image" src="/green-smoothie.jpg"
-    alt="Green Smoothie" />
+        <img property="image" src="/green-smoothie.jpg" alt="Green Smoothie" />
         <h1 property="name">{title}</h1>
         <span property="author">Gez Quinn</span>,
         <span property="recipeYield">1 serving</span>
