@@ -11,8 +11,14 @@ export default function Recipe({ title, recipe }) {
         yields="1"
         ingredients={recipe.split("\n")}
         instructions={[
-          "Blend greens and liquid until smooth.",
-          "Add remaining ingredients and blend again until smooth.",
+          {
+            name: '1',
+            text: "Blend greens and liquid until smooth.",,
+          },
+          {
+            name: '2',
+            text: "Add remaining ingredients and blend again until smooth.",
+          }
         ]}
       />
       <div>
