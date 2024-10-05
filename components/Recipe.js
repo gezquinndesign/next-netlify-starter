@@ -3,9 +3,6 @@ export default function Recipe({ title, recipe }) {
     <div vocab="https://schema.org/" typeof="Recipe">
       <h1 data-property="name">{title}</h1>
       <span data-property="author">Gez Quinn</span>,
-      <meta data-property="datePublished" content="2024-10-05">
-        May 8, 2009
-      </meta>
       <span data-property="recipeYield">1 serving</span>
       <h3 data-property="recipeIngredientsHeader">Ingredients</h3>
       <div className="wprm-recipe-ingredient-group">
