@@ -13,7 +13,7 @@ export default function Recipe({ title, recipe }) {
         instructions={[
           {
             name: '1',
-            text: "Blend greens and liquid until smooth.",,
+            text: "Blend greens and liquid until smooth.",
           },
           {
             name: '2',
