@@ -8,6 +8,7 @@ export default function Recipe({ title, recipe }) {
         "@type": "Recipe",
         "name": "${title}",
         "author": "Gez Quinn",
+        "image": "/green-smoothie.jpg",
         "recipeYield": "1 serving",
         "recipeIngredient": [
           ${recipe
@@ -23,6 +24,8 @@ export default function Recipe({ title, recipe }) {
       `}
       </script>
       <div vocab="https://schema.org/" typeof="Recipe">
+      <img property="image" src="/green-smoothie.jpg"
+    alt="Green Smoothie" />
         <h1 property="name">{title}</h1>
         <span property="author">Gez Quinn</span>,
         <span property="recipeYield">1 serving</span>
