@@ -10,7 +10,7 @@ export default function Recipe({ title, recipe }) {
         description="A healthy green smoothie recipe."
         prepTime="PT5M"
         cookTime="PT0M"
-        image="https://friendly-cheesecake-e6101a.netlify.app/green-smoothie.jpg"
+        images={["https://friendly-cheesecake-e6101a.netlify.app/green-smoothie.jpg"]}
         yields="1"
         ingredients={recipe ? recipe.split("\n") : []}
         instructions={[
