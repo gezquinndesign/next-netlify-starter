@@ -30,8 +30,6 @@ export default function Recipe({ title, recipe }) {
           alt="Green Smoothie"
         />
         <h1>{title}</h1>
-        <span>Gez Quinn</span>,<span>1 serving</span>
-        <h3>Ingredients</h3>
         <div>
           <ul>
             {(recipe ? recipe.split("\n"):[]).map((line, index) => (
@@ -39,7 +37,6 @@ export default function Recipe({ title, recipe }) {
             ))}
           </ul>
         </div>
-        <h3>Instructions</h3>
         <ol>
           <li>Blend greens and liquid until smooth.</li>
           <li>Add remaining ingredients and blend again until smooth.</li>
